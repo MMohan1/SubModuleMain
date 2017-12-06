@@ -1,3 +1,3 @@
 print "Here"
-from SubDomainTest.run import Test
+from SubModuleTest.run import Test
 print Test()
