@@ -22,7 +22,7 @@
         4.  config_template.py
         5.  configreader.py
         6.  constants.py
-        7.  hirealchemy.ini
+        7.  app.ini
         8.  hook_manager.py
         9.  main.py
         10.  routes.py
@@ -31,7 +31,7 @@
     3. SubModuleTest(Child)
         1.   README.md
         2.    __init__.py
-        3.    hirealchemy.ini
+        3.    app.ini
         4.    run.py
         5.    sub_module_routes.py
     4. In the Child directory all the routes and imported in __init__.py file , all the hook class and functions also import there only.
