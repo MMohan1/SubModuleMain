@@ -4,7 +4,7 @@ sub_module_ini = ""
 from SubModuleTest import *
 from configreader import ConfigReaderWrapper
 cfgreader = ConfigReaderWrapper()
-app_ini = "hirealchemy.ini"
+app_ini = "app.ini"
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 ini_path = APP_ROOT + "/" + app_ini
 def overwrite_ini_values():
