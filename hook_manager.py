@@ -12,9 +12,15 @@ class HookManager:
         print 'Entering %s' % self.func
         return self.func(*args, **kw)
 
-    def call(self, hook_type, *args):
+    def hook_register(self, company_name, hook_type, *args):
+        hook_type = company_name + ":" + hook_type
         if hook_type in self.handlers:
-            return self.handlers[hook_type](*args)
+            return True
+            
+    def call(self, company_name, hook_type, *args, **kwargs):
+        hook_type = company_name + ":" + hook_type
+        if hook_type in self.handlers:
+            return self.handlers[hook_type](*args, **kwargs)
 
     def hook(self, hook_type):
         def registerhandler(handler):
